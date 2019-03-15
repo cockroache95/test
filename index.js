@@ -13,7 +13,7 @@ var users = {};
 var rooms = {};
 var wss = new WebSocketServer({server: server});
 var sendUser,receiUser,startTime,stopTime,typeSend;
-wss.on('connection',function(connection){
+wss.on('connection',function(connection){ // hjklazdsjfhaksjdfh
 
     connection.on('message',function(message){
         var data;
@@ -23,7 +23,7 @@ wss.on('connection',function(connection){
             logger.error(e);
             data = {};
         }
-        console.log(data);
+        console.log(data); // sdjkfhsdjkfsjdfhjk
         switch(data.type){
             case "loggin":
                
